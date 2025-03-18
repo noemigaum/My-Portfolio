@@ -14,7 +14,7 @@
         <div class="logo">Noemi Gaum</div>
         <ul class="nav-links">
             <li><a href="#about">About</a></li>
-            <li><a href="#resume">Resume</a></li>
+            <li><a href="#details">Details</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
@@ -36,8 +36,8 @@
         <p>Highly skilled BIM Specialist with 7+ years of experience in the construction industry...</p>
     </section>
 
-    <!-- Resume Section -->
-    <section id="resume">
+    <!-- Details Section -->
+    <section id="details">
         <h2>Details</h2>
         <ul>
             <li><strong>Location:</strong> Cebu, Philippines</li>
@@ -62,27 +62,15 @@
         </div>
     </section>
 
-    <!-- Testimonials Section -->
-    <section id="testimonials">
-        <h2>Testimonials</h2>
-        <div class="testimonial">
-            <p>"Noemi's expertise in BIM modeling has significantly improved our projects!"</p>
-            <span>- Client A</span>
-        </div>
-        <div class="testimonial">
-            <p>"Professional, skilled, and highly knowledgeable. A pleasure to work with!"</p>
-            <span>- Client B</span>
-        </div>
-    </section>
-
     <!-- Contact Section -->
     <section id="contact">
         <h2>Contact</h2>
-        <form>
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" required></textarea>
+        <form id="contact-form">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Your Message" required></textarea>
             <button type="submit">Send Message</button>
+            <p id="form-message"></p>
         </form>
     </section>
 

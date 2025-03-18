@@ -1,7 +1,110 @@
-const themeToggle = document.getElementById("theme-toggle");
-const body = document.body;
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    transition: background 0.3s ease, color 0.3s ease;
+}
 
-themeToggle.addEventListener("click", () => {
-    body.classList.toggle("dark-mode");
-    themeToggle.textContent = body.classList.contains("dark-mode") ? "☀️" : "🌙";
-});
+/* Dark Mode */
+.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #222;
+    padding: 15px 30px;
+    color: white;
+}
+
+nav .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin-left: auto;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    background: #ffcc00;
+    color: black;
+}
+
+/* Hero Section */
+.hero {
+    height: 60vh;
+    background: url('hero-bg.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+/* Projects Section */
+.gallery {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.project {
+    background: #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.project:hover {
+    transform: scale(1.05);
+}
+
+/* Contact Form */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
+}
+
+form input, form textarea {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px;
+    background: #ffcc00;
+    border: none;
+    cursor: pointer;
+}
+
+#form-message {
+    color: red;
+    font-size: 14px;
+}
