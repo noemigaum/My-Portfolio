@@ -35,6 +35,11 @@ header {
     text-decoration: none;
     border-radius: 5px;
     font-size: 18px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #e65c00;
 }
 
 /* Skills Section */
@@ -98,4 +103,9 @@ form button {
     color: white;
     padding: 12px;
     font-size: 16px;
+    transition: 0.3s;
+}
+
+form button:hover {
+    background: #e65c00;
 }
