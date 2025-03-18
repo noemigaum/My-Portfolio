@@ -16,6 +16,9 @@ nav {
     top: 0;
     width: 100%;
     z-index: 1000;
+    display: flex;
+    justify-content: flex-end; /* Align menu to the right */
+    padding-right: 30px; /* Add some spacing from the right */
 }
 
 nav ul {
@@ -23,7 +26,6 @@ nav ul {
     padding: 0;
     margin: 0;
     display: flex;
-    justify-content: center;
 }
 
 nav ul li {
@@ -35,10 +37,14 @@ nav ul li a {
     text-decoration: none;
     font-weight: bold;
     transition: 0.3s;
+    padding: 10px 15px;
+    background: #555;
+    border-radius: 5px;
 }
 
 nav ul li a:hover {
-    color: #ffcc00;
+    background: #ffcc00;
+    color: black;
 }
 
 /* Header Section */
@@ -83,17 +89,13 @@ section {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Resume Section */
-ul {
-    list-style: none;
-    padding: 0;
+/* Resume Section - Change 'Resume' to 'Details' */
+#resume h2 {
+    text-decoration: none; /* Remove line-through */
 }
 
-ul li {
-    background: #ddd;
-    margin: 5px;
-    padding: 10px;
-    border-radius: 5px;
+#resume h2::before {
+    content: "Details"; /* Change text */
 }
 
 /* Project Gallery */
@@ -135,8 +137,10 @@ ul li {
 @media (max-width: 600px) {
     nav ul {
         flex-direction: column;
+        align-items: flex-end;
+        padding-right: 10px;
     }
-    
+
     .gallery {
         grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     }
