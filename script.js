@@ -1,28 +1,16 @@
-const themeToggle = document.getElementById("theme-toggle");
-const body = document.body;
-const form = document.getElementById("contact-form");
-const nameInput = document.getElementById("name");
-const emailInput = document.getElementById("email");
-const messageInput = document.getElementById("message");
-const formMessage = document.getElementById("form-message");
+document.addEventListener("DOMContentLoaded", function () {
+    console.log("Portfolio site loaded!");
 
-// Dark Mode Toggle
-themeToggle.addEventListener("click", () => {
-    body.classList.toggle("dark-mode");
-    themeToggle.textContent = body.classList.contains("dark-mode") ? "☀️" : "🌙";
-});
+    // Open Modal Function
+    window.openModal = function(imageSrc, title, description) {
+        document.getElementById("modalImage").src = imageSrc;
+        document.getElementById("modalTitle").innerText = title;
+        document.getElementById("modalDescription").innerText = description;
+        document.getElementById("projectModal").style.display = "block";
+    };
 
-// Contact Form Validation
-form.addEventListener("submit", (e) => {
-    e.preventDefault();
-
-    if (nameInput.value === "" || emailInput.value === "" || messageInput.value === "") {
-        formMessage.textContent = "Please fill out all fields!";
-        return;
-    }
-
-    formMessage.textContent = "Message sent successfully!";
-    formMessage.style.color = "green";
-
-    form.reset();
+    // Close Modal Function
+    window.closeModal = function() {
+        document.getElementById("projectModal").style.display = "none";
+    };
 });

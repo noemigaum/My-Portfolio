@@ -5,74 +5,93 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Noemi Gaum | BIM Specialist</title>
     <link rel="stylesheet" href="styles.css">
-    <script defer src="script.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
-    <!-- Navigation Bar -->
-    <nav>
-        <div class="logo">Noemi Gaum</div>
-        <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#details">Details</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-        <button id="theme-toggle">🌙</button>
-    </nav>
-
-    <!-- Hero Section -->
-    <header class="hero">
-        <div class="hero-text">
-            <h1>Noemi Gaum</h1>
-            <p>BIM Specialist & Architectural Drafter</p>
-            <a href="Resume-Noemi-Gaum.pdf" class="btn" download>Download Resume</a>
-        </div>
+    <header>
+        <nav>
+            <h1 class="logo">Noemi Gaum</h1>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <!-- About Me Section -->
+    <section class="hero">
+        <h2>Hi, I'm Noemi Gaum</h2>
+        <p>BIM Specialist | Revit | AutoCAD | SketchUp | Lumion</p>
+        <a href="#contact" class="btn">Hire Me</a>
+    </section>
+
     <section id="about">
         <h2>About Me</h2>
-        <p>Highly skilled BIM Specialist with 7+ years of experience in the construction industry...</p>
+        <p>I'm a BIM Specialist with expertise in Revit, AutoCAD, SketchUp, and Lumion. I specialize in creating architectural designs and 3D visualizations.</p>
     </section>
 
-    <!-- Details Section -->
-    <section id="details">
-        <h2>Details</h2>
-        <ul>
-            <li><strong>Location:</strong> Cebu, Philippines</li>
-            <li><strong>Email:</strong> <a href="mailto:gaum.noemi@gmail.com">gaum.noemi@gmail.com</a></li>
-            <li><strong>Phone:</strong> +639655234500</li>
-            <li><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/noemi-gaum" target="_blank">linkedin.com/in/noemi-gaum</a></li>
-        </ul>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="gallery">
-            <div class="project">
-                <img src="project1.jpg" alt="Project 1">
-                <p>High-rise BIM model for urban development.</p>
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <div class="skill">
+                <div class="circle" data-percent="90">
+                    <span class="tooltip">90%</span>
+                </div>
+                <p>Revit</p>
             </div>
-            <div class="project">
-                <img src="project2.jpg" alt="Project 2">
-                <p>Architectural drafting for a modern villa.</p>
+            <div class="skill">
+                <div class="circle" data-percent="85">
+                    <span class="tooltip">85%</span>
+                </div>
+                <p>AutoCAD</p>
+            </div>
+            <div class="skill">
+                <div class="circle" data-percent="80">
+                    <span class="tooltip">80%</span>
+                </div>
+                <p>SketchUp</p>
+            </div>
+            <div class="skill">
+                <div class="circle" data-percent="75">
+                    <span class="tooltip">75%</span>
+                </div>
+                <p>Lumion</p>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
+    <section id="projects">
+        <h2>Project Gallery</h2>
+        <div class="gallery">
+            <div class="project" onclick="openModal('project1.jpg', 'Project 1', 'Description of Project 1')">
+                <img src="project1.jpg" alt="Project 1">
+                <div class="overlay"><span>View Project</span></div>
+            </div>
+            <div class="project" onclick="openModal('project2.jpg', 'Project 2', 'Description of Project 2')">
+                <img src="project2.jpg" alt="Project 2">
+                <div class="overlay"><span>View Project</span></div>
+            </div>
+        </div>
+    </section>
+
     <section id="contact">
-        <h2>Contact</h2>
-        <form id="contact-form">
-            <input type="text" id="name" placeholder="Your Name" required>
-            <input type="email" id="email" placeholder="Your Email" required>
-            <textarea id="message" placeholder="Your Message" required></textarea>
+        <h2>Contact Me</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
             <button type="submit">Send Message</button>
-            <p id="form-message"></p>
         </form>
     </section>
 
+    <footer>
+        <p>© 2024 Noemi Gaum. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
