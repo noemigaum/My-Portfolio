@@ -3,86 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Noemi Gaum - Portfolio</title>
+    <title>Noemi Gaum | BIM Specialist</title>
     <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
 
-    <!-- Navigation -->
+    <!-- Navigation Bar -->
     <nav>
-        <ul>
+        <div class="logo">Noemi Gaum</div>
+        <ul class="nav-links">
             <li><a href="#about">About</a></li>
             <li><a href="#resume">Resume</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
+        <button id="theme-toggle">🌙</button>
     </nav>
 
-    <!-- Header -->
-    <header>
-        <h1>Noemi Gaum</h1>
-        <p>BIM Specialist & Architectural Drafter</p>
-        <a href="Resume-Noemi-Gaum.pdf" download class="btn">Download Resume</a>
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-text">
+            <h1>Noemi Gaum</h1>
+            <p>BIM Specialist & Architectural Drafter</p>
+            <a href="Resume-Noemi-Gaum.pdf" class="btn" download>Download Resume</a>
+        </div>
     </header>
 
     <!-- About Section -->
     <section id="about">
         <h2>About Me</h2>
-        <p>Highly skilled BIM Specialist with 7+ years of experience in the construction industry, specializing in remote project management and drafting for various projects in New Zealand and the USA.</p>
+        <p>Highly skilled BIM Specialist with 7+ years of experience in the construction industry...</p>
     </section>
 
     <!-- Resume Section -->
     <section id="resume">
-        <h2>Resume</h2>
-        <p><strong>Location:</strong> Cebu, Philippines</p>
-        <p><strong>Email:</strong> <a href="mailto:gaum.noemi@gmail.com">gaum.noemi@gmail.com</a></p>
-        <p><strong>Phone:</strong> +639655234500</p>
-        <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/noemi-gaum" target="_blank">linkedin.com/in/noemi-gaum</a></p>
-
-        <h3>Skills</h3>
+        <h2>Details</h2>
         <ul>
-            <li>Autodesk Revit, AutoCAD, SketchUp, Lumion</li>
-            <li>Adobe Photoshop, Bluebeam, Microsoft Office</li>
-            <li>PointCloud to BIM, Naviswork, Revizto</li>
-            <li>Construction Estimation</li>
+            <li><strong>Location:</strong> Cebu, Philippines</li>
+            <li><strong>Email:</strong> <a href="mailto:gaum.noemi@gmail.com">gaum.noemi@gmail.com</a></li>
+            <li><strong>Phone:</strong> +639655234500</li>
+            <li><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/noemi-gaum" target="_blank">linkedin.com/in/noemi-gaum</a></li>
         </ul>
-
-        <h3>Education</h3>
-        <p>Bachelor of Science in Architecture - University of Mindanao (2013-2018)</p>
-
-        <h3>Experience</h3>
-        <p>BIM Drafter at Innovation Design and Consulting</p>
     </section>
 
     <!-- Projects Section -->
     <section id="projects">
         <h2>Projects</h2>
-        <p>Here are some of my past projects:</p>
         <div class="gallery">
-            <!-- Placeholder for project images -->
             <div class="project">
                 <img src="project1.jpg" alt="Project 1">
-                <p>Project 1 - Description</p>
+                <p>High-rise BIM model for urban development.</p>
             </div>
             <div class="project">
                 <img src="project2.jpg" alt="Project 2">
-                <p>Project 2 - Description</p>
-            </div>
-            <div class="project">
-                <img src="project3.jpg" alt="Project 3">
-                <p>Project 3 - Description</p>
+                <p>Architectural drafting for a modern villa.</p>
             </div>
         </div>
-        <input type="file" id="upload" multiple>
     </section>
 
     <!-- Contact Section -->
     <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Email: <a href="mailto:gaum.noemi@gmail.com">gaum.noemi@gmail.com</a></p>
-        <p>LinkedIn: <a href="https://linkedin.com/in/noemi-gaum" target="_blank">linkedin.com/in/noemi-gaum</a></p>
+        <h2>Contact</h2>
+        <p>Feel free to reach out via email or LinkedIn.</p>
+        <a href="mailto:gaum.noemi@gmail.com">Email Me</a>
     </section>
 
-    <script src="script.js"></script>
 </body>
 </html>
